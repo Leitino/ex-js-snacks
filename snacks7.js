@@ -19,6 +19,8 @@ var listaZucchine=[zucchina1, zucchina2, zucchina3, zucchina4, zucchina5, zucchi
 var zucchineMeno15 =[]
 var zucchineMaggiore15 =[]
 
+sommaMeno15=0
+sommaMaggiore15=0
 for (var i = 0; i < listaZucchine.length; i++) {
   if (listaZucchine[i].lunghezza_cm <15) {
     zucchineMeno15.push(listaZucchine[i])
@@ -27,5 +29,14 @@ for (var i = 0; i < listaZucchine.length; i++) {
     zucchineMaggiore15.push(listaZucchine[i])
   }
 }
+
+for (var i = 0; i < zucchineMeno15.length; i++) {
+  sommaMeno15=sommaMeno15+zucchineMeno15[i].kg_peso
+}
+for (var i = 0; i < zucchineMaggiore15.length; i++) {
+  sommaMaggiore15=sommaMaggiore15+zucchineMaggiore15[i].kg_peso
+}
+console.log(sommaMeno15)
+console.log(sommaMaggiore15)
 console.log(zucchineMeno15)
 console.log(zucchineMaggiore15)

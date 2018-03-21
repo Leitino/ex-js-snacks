@@ -10,7 +10,8 @@ for (var i = 0; i < Browser.tab.length; i++) {
     Browser.tab.splice(i,1)
   }
   else {
-    Browser.active_tab = +1
+    Browser.active_tab = +3
   }
 }
     console.log(Browser.tab)
+    console.log(Browser.active_tab)
